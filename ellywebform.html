@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        form {
+            background-color: #d7d1d1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 700px;
+            width: 500px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+        
+        button.cancel {
+            background-color: black;
+        }
+    </style>
+    <title>Simple Form</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <h1>
+            <center><strong>ONLINE APPLICATION FORM</strong></center>
+        </h1>
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">PHONE NUMBER:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">SUBJECT:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
